@@ -38,7 +38,7 @@
                     <Image Source="./image/logo_water_luxor.jpg"/>
                 </Border>
             </Grid>
-            <TextBlock Text="برمجيات بلال" Grid.Row="2" Style="{StaticResource Texts}" FontSize="50"/>
+            <TextBlock Text="" Grid.Row="2" Style="{StaticResource Texts}" FontSize="50"/>
         </Grid>
     </Border>
 
