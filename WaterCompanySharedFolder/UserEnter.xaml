@@ -1,0 +1,30 @@
+﻿<Window x:Class="WaterCompanySharedFolder.UserEnter"
+        WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:water_company_data_transfeer"
+        mc:Ignorable="d"
+        Title="UserEnter" Height="300" Width="600">
+    <Border Padding="10">
+        <Grid Background="#808e9b">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="User Name" Style="{StaticResource Texts}" FontSize="25"/>
+            <TextBox FontSize="25" Grid.Row="0" Grid.Column="2" Style="{StaticResource TextsBox}" Margin="20" x:Name="User" FlowDirection="LeftToRight"/>
+
+            <TextBlock Text="Password" Grid.Row="1" Style="{StaticResource Texts}" FontSize="25"/>
+            <TextBox FontSize="25" Grid.Row="1" Grid.Column="2" Style="{StaticResource TextsBox}" Margin="20" x:Name="Pass" FlowDirection="LeftToRight"/>
+
+            <Button Grid.Column="2" Grid.Row="3" FontSize="30" Margin="20" Style="{StaticResource ButtonHeader}" Content="SignIn" Click="signIn"/>
+        </Grid>
+    </Border>
+</Window>

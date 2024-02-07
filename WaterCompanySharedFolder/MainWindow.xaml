@@ -1,0 +1,45 @@
+﻿<Window x:Class="WaterCompanySharedFolder.MainWindow"
+        WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:water_company_data_transfeer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="800">
+    <Border Padding="10">
+        <Grid Background="#808e9b">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Style="{StaticResource ButtonHeader}" Grid.Column="0" Content="Enter Data" Click="enterData"/>
+                <Button Style="{StaticResource ButtonHeader}" Grid.Column="1" Content="Download Data" Click="Download"/>
+                <Button x:Name="CreateUserBtn" Style="{StaticResource ButtonHeader}" Grid.Column="2" Content="Create New User" Click="CreateUser"/>
+                <Button x:Name="SendFileToMasterBtn" Style="{StaticResource ButtonHeader}" Grid.Column="3" Content="Send To Master" Click="SendFile"/>
+            </Grid>
+            <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Border CornerRadius="50"
+                    Width="750"
+                    Height="400"
+                    Margin="10"
+                    Padding="0,20,0,0"
+                    Background="#808e9b"
+                    BorderBrush="Black"
+                     BorderThickness="1">
+                    <Image Source="./image/logo_water_luxor.jpg"/>
+                </Border>
+            </Grid>
+            <TextBlock Text="برمجيات بلال" Grid.Row="2" Style="{StaticResource Texts}" FontSize="50"/>
+        </Grid>
+    </Border>
+
+</Window>
